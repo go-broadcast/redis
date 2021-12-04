@@ -1,3 +1,4 @@
+// This package provides a Redis github.com/go-broadcast/broadcast Dispatcher implementation.
 package redis
 
 import (

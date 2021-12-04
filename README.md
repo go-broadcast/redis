@@ -22,8 +22,8 @@ func main() {
 		log.Fatal(err)
 	}
 	
-	broadcaster, err := broadcast.New(
-		redis.WithDispatcher(dispatcher),
+	broadcaster, _, err := broadcast.New(
+		broadcast.WithDispatcher(dispatcher),
 	)
 	if err != nil {
 		log.Fatal(err)
